@@ -15,6 +15,10 @@
     <meta property="og:image:height" content="200" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700">
+    <script>
+        var sound = new Audio();
+        sound.src = "https://github.com/aggeloszag/D3js-uk-political-donations/blob/master/sound.mp3";
+    </script>
 
     <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -41,17 +45,17 @@
     <nav role="navigation">
         
         <ul>
-            <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money </a>
-                <snd src="https://github.com/aggeloszag/D3js-uk-political-donations/blob/master/sound.mp3" onclick="document.getElementById('sound').play();>
+            <li><a href="#"  role="button" class="pure-button switch" id="all-donations" onmousedown="sound.play()">All money </a>
+                
                  
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source" onmousedown="sound.play()">The public's purse</a>
                 
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-party">Split by party</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-party" onmousedown="sound.play()">Split by party</a>
                 
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type">Split by type of donor</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type" onmousedown="sound.play()">Split by type of donor</a>
                 
             </li>
          </ul>
